@@ -3,7 +3,7 @@
 #  spotdl --download-ffmpeg
 #  Las canciones se guardan dónde esté el archivo .py
 
-import mysql.connector
+#import mysql.connector
 from pathlib import Path
 import subprocess   
 
