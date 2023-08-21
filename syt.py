@@ -3,7 +3,7 @@
 #  spotdl --download-ffmpeg
 #  Las canciones se guardan dónde esté el archivo .py
 
-import mysql.connector
+#import mysql.connector
 from pathlib import Path
 import subprocess   
 
@@ -30,29 +30,3 @@ def descargar():
         input("Presiona Enter para salir...")
 
 descargar()
-
-# # Configura la conexión a la base de datos
-# db_connection = mysql.connector.connect(
-#     host="localhost",
-#     user="root",
-#     password="",
-#     database="dkmusic"
-# )
-
-# # Crea un objeto cursor para ejecutar consultas
-# cursor = db_connection.cursor()
-
-# # Ejemplo de inserción de datos en la tabla de canciones
-# song_data = ("Canción 1", "Artista 1", "Álbum 1", "Género", 2023)
-# insert_query = "INSERT INTO canciones (titulo, artista, album, genero, anio) VALUES (%s, %s, %s, %s, %s)"
-# cursor.execute(insert_query, song_data)
-
-# # Confirma los cambios en la base de datos
-# db_connection.commit()
-
-# # Cierra el cursor y la conexión
-# cursor.close()
-# db_connection.close()
-
-# descargar()
-
